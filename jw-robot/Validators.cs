@@ -36,7 +36,7 @@ namespace jw_robot
             
             var parseX = int.TryParse(split[0], out values.X);
             var parseY = int.TryParse(split[1], out values.Y);
-            var parseF = Enum.TryParse(split[2], out values.Facing);
+            var parseF = TryParse(split[2], out values.Facing);
             if(values.X > field.Width || values.Y > field.Depth)
             {
                 return false;
