@@ -1,12 +1,14 @@
-﻿namespace jw_robot
+﻿using System;
+
+namespace jw_robot
 {
-    public struct Position
+    public class Position
     {
         public int X;
         public int Y;
-        public string Facing;
+        public Direction Facing;
         
-        public Position(int x, int y, string facing)
+        public Position(int x= 0, int y=0, Direction facing = Direction.N)
         {
             X = x;
             Y = y;
