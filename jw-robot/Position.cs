@@ -8,7 +8,7 @@ namespace jw_robot
         public int Y;
         public Directions Facing;
         
-        public Position(int x= 0, int y=0, Directions facing = Directions.N)
+        public Position(int x = 0, int y = 0, Directions facing = Directions.N)
         {
             X = x;
             Y = y;
