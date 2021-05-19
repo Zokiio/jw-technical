@@ -14,22 +14,19 @@ namespace jw_robot
             CurrentField = currentField;
         }
 
-        public void Move(char[] instructions)
+        public Position Move(char[] instructions)
         {
             foreach (var movement in instructions)
             {
                 switch (movement)
                 {
                     case 'F':
-                        Console.WriteLine("Moving Forward");
                         Forward();
                         break;
                     case 'L':
-                        Console.WriteLine("Turn Left");
                         Turn(movement);
                         break;
                     case 'R':
-                        Console.WriteLine("Turn Right");
                         Turn(movement);
                         break;
                     default:
@@ -37,9 +34,11 @@ namespace jw_robot
                         break;
                 }
 
-                Console.WriteLine(MyPosition.Facing);
-                Console.WriteLine(MyPosition.X + " " + MyPosition.Y);
+                // Console.WriteLine(MyPosition.Facing);
+                // Console.WriteLine(MyPosition.X + " " + MyPosition.Y);
             }
+
+            return MyPosition;
         }
 
         private void Turn(char turn)
@@ -68,40 +67,47 @@ namespace jw_robot
 
         void Forward()
         {
-            if (MyPosition.Facing == N)
+            switch (MyPosition.Facing)
             {
-                var myPosition = MyPosition;
-                if (myPosition.Y !>= CurrentField.y)
+                case N:
                 {
-                    myPosition.Y += 1;
+                    if (MyPosition.Y < CurrentField.y)
+                    {
+                        ++MyPosition.Y;
+                    }
+                    
+                    break;
                 }
-                
-            }
-            if (MyPosition.Facing == E)
-            {
-                var myPosition = MyPosition;
-                if (myPosition.X !>= 0)
+                case E:
                 {
-                    myPosition.X -= 1;
+                    if (MyPosition.X < CurrentField.x)
+                    {
+                       ++MyPosition.X;
+                    }
+
+                    break;
                 }
-                
-            }
-            if (MyPosition.Facing == S)
-            {
-                var myPosition = MyPosition;
-                if (myPosition.Y !<= CurrentField.y)
+                case S:
                 {
-                    myPosition.Y -= 1;
+                    if (MyPosition.Y > CurrentField.y)
+                    {
+                        --MyPosition.Y;
+                    }
+
+                    break;
                 }
-                
-            }
-            if (MyPosition.Facing == W)
-            {
-                var myPosition = MyPosition;
-                if (myPosition.X !<= 0)
+                case W:
                 {
-                    myPosition.X += 1;
+                    if (MyPosition.X > 0)
+                    {
+                        --MyPosition.X;
+                    }
+
+                    break;
                 }
+                default:
+                    Console.WriteLine("Robot went outside");
+                    break;
             }
         }
     }
