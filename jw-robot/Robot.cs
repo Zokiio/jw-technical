@@ -6,9 +6,9 @@ namespace jw_robot
     public class Robot
     {
         private Position MyPosition { get; set; }
-        private (int x, int y) CurrentField { get; set; }
+        private Field CurrentField { get; set; }
 
-        public Robot(Position myPosition, (int x, int y) currentField)
+        public Robot(Position myPosition, Field currentField)
         {
             MyPosition = myPosition;
             CurrentField = currentField;
@@ -68,7 +68,7 @@ namespace jw_robot
             {
                 case N:
                 {
-                    if (MyPosition.Y < CurrentField.y)
+                    if (MyPosition.Y < CurrentField.Depth)
                     {
                         ++MyPosition.Y;
                     }
@@ -77,7 +77,7 @@ namespace jw_robot
                 }
                 case E:
                 {
-                    if (MyPosition.X < CurrentField.x)
+                    if (MyPosition.X < CurrentField.Width)
                     {
                        ++MyPosition.X;
                     }
@@ -86,7 +86,7 @@ namespace jw_robot
                 }
                 case S:
                 {
-                    if (MyPosition.Y > CurrentField.y)
+                    if (MyPosition.Y > 0)
                     {
                         --MyPosition.Y;
                     }

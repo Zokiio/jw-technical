@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 
 using Console = Colorful.Console;
 
@@ -31,26 +32,29 @@ namespace jw_robot
             Console.WriteLine($"Final Position: X: {finalPosition.X}, Y: {finalPosition.Y}, Facing: {finalPosition.Facing}", Color.Goldenrod);// Row  10
         }
 
-        public (int x, int y) InputFieldSize()
+        public Field InputFieldSize()
         {
             int[] inputValues;
             Console.SetCursorPosition(_startCol, _startRow);
             Console.WriteFormatted("Enter field size. {0}", Color.YellowGreen, Color.SeaGreen,"(Ex: 5 6): ");
-            while (!Validator.TryParseIntList(Console.ReadLine().Trim(), out inputValues, 2))
+            while (!Validator.ValidateFieldSize(Console.ReadLine().Trim(), out inputValues, 2))
             {
                 Console.SetCursorPosition(_startCol, _startRow);
                 Helpers.ClearCurrentConsoleLine();
-                Console.WriteLine("Invalid Input. Try Again...", Color.Crimson);
-                Helpers.ClearCurrentConsoleLine();
+                Helpers.ErrorMessage();
                 Console.SetCursorPosition(_startCol, _startRow+1);
                 Console.WriteFormatted("Enter field size. {0}", Color.YellowGreen, Color.SeaGreen,"(Ex: 5 6): ");
             }
 
+            var field = new Field(
+                inputValues[1],
+                inputValues[1]
+            );
             UpdateValues(8, $"{inputValues[0]} {inputValues[1]}");
-            return (inputValues[0], inputValues[1]);
+            return field;
         }
 
-        public Position InputStartPosition((int x, int y) fieldSize)
+        public Position InputStartPosition(Field fieldSize)
         {
             var inputValues = new Position();
             
@@ -62,9 +66,7 @@ namespace jw_robot
             {
                 Console.SetCursorPosition(_startCol, _startRow);
                 Helpers.ClearCurrentConsoleLine(3);
-                Console.WriteLine("Invalid Input. Try Again...", Color.Crimson);
-                Helpers.ClearCurrentConsoleLine();
-                Console.SetCursorPosition(_startCol, _startRow+1);
+                Helpers.ErrorMessage();
                 Console.WriteLineFormatted("Enter Starting position and what direction the robot should face. \nUse {0} for direction {1} ",Color.YellowGreen, Color.SeaGreen,"N/E/S/W", "(Ex: 2 3 N): ");
                 Console.Write("Start position, X / Y, can't be lower or larger than the field size: ", Color.SeaGreen);
             }
@@ -85,12 +87,26 @@ namespace jw_robot
             {
                 Console.SetCursorPosition(_startCol, _startRow);
                 Helpers.ClearCurrentConsoleLine(5);
-                Console.WriteLine("Invalid Input. Try Again...", Color.Crimson);
+                Helpers.ErrorMessage();
                 Console.WriteLine("Enter move instructions for the robot.",Color.SeaGreen);
                 Console.WriteFormatted("Use {0} to turn Right, {1} to turn Left, {2} to walk Froward. {3}",Color.YellowGreen, Color.SeaGreen, new string[]{"R","L","F","(Ex: FRFFLFLLF):"} );
             }
 
             return instructions;
+        }
+
+        public bool Restart()
+        {
+            Console.SetCursorPosition(_startCol, _startRow);
+            Helpers.ClearCurrentConsoleLine(5);
+            Console.WriteLine("Do you want to Restart (Y/N)? ");
+            var input = Console.ReadKey();
+            if (input.KeyChar != 'Y')
+            {
+                return true;
+            }
+
+            return false;
         }
     }
 }

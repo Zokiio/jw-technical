@@ -26,7 +26,7 @@ namespace jw_robot
             return true;
         }
         
-        public static bool ValidateInputStartPosition(string input, Position values,(int x, int y) fieldSize)
+        public static bool ValidateInputStartPosition(string input, Position values, Field field)
         {
             var split = input.Trim().ToUpper().Split();
             if (split.Length != 3)
@@ -37,15 +37,14 @@ namespace jw_robot
             var parseX = int.TryParse(split[0], out values.X);
             var parseY = int.TryParse(split[1], out values.Y);
             var parseF = Enum.TryParse(split[2], out values.Facing);
-            var (x, y) = fieldSize;
-            if(values.X > x || values.Y > y)
+            if(values.X > field.Width || values.Y > field.Depth)
             {
                 return false;
             }
             return parseX || parseY || parseF;
         }
         
-        public static bool TryParseIntList(string input, out int[] inputValues, int length = 0)
+        public static bool ValidateFieldSize(string input, out int[] inputValues, int length = 0)
         {
             inputValues = default;
             var splits = input.Split(" ");

@@ -7,9 +7,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb58cdad-00da-4a33-8a06-f50ad8f06503" name="Default Changelist" comment="Change naming convention on Enum">
+    <list default="true" id="eb58cdad-00da-4a33-8a06-f50ad8f06503" name="Default Changelist" comment="Remove readkey">
+      <change afterPath="$PROJECT_DIR$/jw-robot/Field.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.jw-robot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.jw-robot/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-robot/Helpers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/jw-robot/Helpers.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-robot/Position.cs" beforeDir="false" afterPath="$PROJECT_DIR$/jw-robot/Position.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jw-robot/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/jw-robot/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-robot/Robot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/jw-robot/Robot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jw-robot/UserInterface.cs" beforeDir="false" afterPath="$PROJECT_DIR$/jw-robot/UserInterface.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jw-robot/Validators.cs" beforeDir="false" afterPath="$PROJECT_DIR$/jw-robot/Validators.cs" afterDir="false" />
     </list>
@@ -32,19 +36,21 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/Users/jocke/RiderProjects/jw-robot/jw-robot/UserInterface.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/jocke/RiderProjects/jw-robot/jw-robot/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/jocke/RiderProjects/jw-robot/jw-robot/Validators.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/jw-robot/UserInterface/UserInterface.cs" />
       <option value="$PROJECT_DIR$/jw-robot/StartPosition.cs" />
-      <option value="$PROJECT_DIR$/jw-robot/Helpers.cs" />
       <option value="$PROJECT_DIR$/jw-robot/Instructions.cs" />
       <option value="$PROJECT_DIR$/jw-robot/Directions.cs" />
+      <option value="$PROJECT_DIR$/jw-robot/Helpers.cs" />
       <option value="$PROJECT_DIR$/jw-robot/Position.cs" />
       <option value="$PROJECT_DIR$/jw-robot/Robot.cs" />
-      <option value="$PROJECT_DIR$/jw-robot/Program.cs" />
+      <option value="$PROJECT_DIR$/jw-robot/Field.cs" />
       <option value="$PROJECT_DIR$/jw-robot/Validators.cs" />
       <option value="$PROJECT_DIR$/jw-robot/UserInterface.cs" />
+      <option value="$PROJECT_DIR$/jw-robot/Program.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sjs1UF7UZ1A78nRLoy2zHuf9gL" />
@@ -91,7 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1621397118577</updated>
       <workItem from="1621397129065" duration="31514000" />
-      <workItem from="1621431463279" duration="1985000" />
+      <workItem from="1621431463279" duration="4070000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1621397201806</created>
@@ -205,7 +211,28 @@
       <option name="project" value="LOCAL" />
       <updated>1621432430632</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="ValidateInstructions handle no input">
+      <created>1621433557933</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1621433557933</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Add error message">
+      <created>1621433590564</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1621433590564</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Remove readkey">
+      <created>1621433606509</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1621433606509</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,51 +270,9 @@
     <MESSAGE value="Rafactor: make use of EnumDirections" />
     <MESSAGE value="Add project files" />
     <MESSAGE value="Change naming convention on Enum" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change naming convention on Enum" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/jw-robot/Robot.cs</url>
-          <line>32</line>
-          <properties documentPath="C:\Users\jocke\RiderProjects\jw-robot\jw-robot\Robot.cs" initialLine="32" containingFunctionPresentation="method 'Move'">
-            <startOffsets>
-              <option value="947" />
-            </startOffsets>
-            <endOffsets>
-              <option value="985" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/jw-robot/Robot.cs</url>
-          <line>42</line>
-          <properties documentPath="C:\Users\jocke\RiderProjects\jw-robot\jw-robot\Robot.cs" initialLine="42" containingFunctionPresentation="method 'Turn'">
-            <startOffsets>
-              <option value="1159" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1760" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/jw-robot/Robot.cs</url>
-          <line>65</line>
-          <properties documentPath="C:\Users\jocke\RiderProjects\jw-robot\jw-robot\Robot.cs" initialLine="65" containingFunctionPresentation="method 'Forward'">
-            <startOffsets>
-              <option value="1811" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1812" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="ValidateInstructions handle no input" />
+    <MESSAGE value="Add error message" />
+    <MESSAGE value="Remove readkey" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove readkey" />
   </component>
 </project>
