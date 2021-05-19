@@ -61,7 +61,7 @@ namespace jw_robot
             while (!Validator.ValidateInputStartPosition(Console.ReadLine(), inputValues, fieldSize))
             {
                 Console.SetCursorPosition(_startCol, _startRow);
-                Helpers.ClearCurrentConsoleLine();
+                Helpers.ClearCurrentConsoleLine(3);
                 Console.WriteLine("Invalid Input. Try Again...", Color.Crimson);
                 Helpers.ClearCurrentConsoleLine();
                 Console.SetCursorPosition(_startCol, _startRow+1);
@@ -85,6 +85,7 @@ namespace jw_robot
             {
                 Console.SetCursorPosition(_startCol, _startRow);
                 Helpers.ClearCurrentConsoleLine(5);
+                Console.WriteLine("Invalid Input. Try Again...", Color.Crimson);
                 Console.WriteLine("Enter move instructions for the robot.",Color.SeaGreen);
                 Console.WriteFormatted("Use {0} to turn Right, {1} to turn Left, {2} to walk Froward. {3}",Color.YellowGreen, Color.SeaGreen, new string[]{"R","L","F","(Ex: FRFFLFLLF):"} );
             }
