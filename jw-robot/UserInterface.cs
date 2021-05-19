@@ -1,6 +1,6 @@
-﻿using System;
-using System.Drawing;
+﻿using System.Drawing;
 using System.Linq;
+using static System.Enum;
 using Console = Colorful.Console;
 
 namespace jw_robot
@@ -49,7 +49,7 @@ namespace jw_robot
         {
             string[] input;
             int[] parsed;
-            Position inputValues;
+            Position inputValues = new Position();
             
             
             Console.SetCursorPosition(startCol, startRow);
@@ -67,7 +67,8 @@ namespace jw_robot
                 Console.ReadKey();
                 break;
             }
-            inputValues.Facing = input[2];
+
+            TryParse(input[2], out inputValues.Facing);
             inputValues.X = parsed[0];
             inputValues.Y = parsed[1];
             UpdateValues(9, $"{input[0]} {input[1]} {input[2]}");
