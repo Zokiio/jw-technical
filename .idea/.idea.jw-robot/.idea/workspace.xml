@@ -7,8 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb58cdad-00da-4a33-8a06-f50ad8f06503" name="Default Changelist" comment="">
+    <list default="true" id="eb58cdad-00da-4a33-8a06-f50ad8f06503" name="Default Changelist" comment="Change naming convention on Enum">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.jw-robot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.jw-robot/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-robot/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/jw-robot/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-robot/UserInterface.cs" beforeDir="false" afterPath="$PROJECT_DIR$/jw-robot/UserInterface.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-robot/Validators.cs" beforeDir="false" afterPath="$PROJECT_DIR$/jw-robot/Validators.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,16 +29,20 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/jocke/RiderProjects/jw-robot/jw-robot/UserInterface.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/jocke/RiderProjects/jw-robot/jw-robot/Program.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/jw-robot/UserInterface/UserInterface.cs" />
       <option value="$PROJECT_DIR$/jw-robot/StartPosition.cs" />
+      <option value="$PROJECT_DIR$/jw-robot/Helpers.cs" />
+      <option value="$PROJECT_DIR$/jw-robot/Instructions.cs" />
       <option value="$PROJECT_DIR$/jw-robot/Directions.cs" />
       <option value="$PROJECT_DIR$/jw-robot/Position.cs" />
-      <option value="$PROJECT_DIR$/jw-robot/Program.cs" />
-      <option value="$PROJECT_DIR$/jw-robot/Instructions.cs" />
       <option value="$PROJECT_DIR$/jw-robot/Robot.cs" />
-      <option value="$PROJECT_DIR$/jw-robot/Helpers.cs" />
+      <option value="$PROJECT_DIR$/jw-robot/Program.cs" />
       <option value="$PROJECT_DIR$/jw-robot/Validators.cs" />
       <option value="$PROJECT_DIR$/jw-robot/UserInterface.cs" />
     </changedPaths>
@@ -46,7 +53,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3502871" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -84,7 +91,7 @@
       <option name="presentableId" value="Default" />
       <updated>1621397118577</updated>
       <workItem from="1621397129065" duration="31514000" />
-      <workItem from="1621431463279" duration="467000" />
+      <workItem from="1621431463279" duration="1985000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1621397201806</created>
@@ -191,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621430778754</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Change naming convention on Enum">
+      <created>1621432430632</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1621432430632</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,23 +242,50 @@
     <MESSAGE value="Add Validation on input" />
     <MESSAGE value="Rafactor: make use of EnumDirections" />
     <MESSAGE value="Add project files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add project files" />
+    <MESSAGE value="Change naming convention on Enum" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change naming convention on Enum" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/jw-robot/Robot.cs</url>
-          <line>19</line>
-          <properties documentPath="C:\Users\jocke\RiderProjects\jw-robot\jw-robot\Robot.cs" initialLine="19" containingFunctionPresentation="method 'Move'">
+          <line>32</line>
+          <properties documentPath="C:\Users\jocke\RiderProjects\jw-robot\jw-robot\Robot.cs" initialLine="32" containingFunctionPresentation="method 'Move'">
             <startOffsets>
-              <option value="507" />
+              <option value="947" />
             </startOffsets>
             <endOffsets>
-              <option value="508" />
+              <option value="985" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="15" />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/jw-robot/Robot.cs</url>
+          <line>42</line>
+          <properties documentPath="C:\Users\jocke\RiderProjects\jw-robot\jw-robot\Robot.cs" initialLine="42" containingFunctionPresentation="method 'Turn'">
+            <startOffsets>
+              <option value="1159" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1760" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/jw-robot/Robot.cs</url>
+          <line>65</line>
+          <properties documentPath="C:\Users\jocke\RiderProjects\jw-robot\jw-robot\Robot.cs" initialLine="65" containingFunctionPresentation="method 'Forward'">
+            <startOffsets>
+              <option value="1811" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1812" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

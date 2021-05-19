@@ -16,8 +16,6 @@ namespace jw_robot
             var robot = new Robot(startingPos, fieldSize);
             var robotPosition = robot.Move(instructions);
             userInterface.AddFinalReport(robotPosition);
-
-            Console.ReadKey();
         }
     }
 }
