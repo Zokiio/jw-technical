@@ -14,38 +14,35 @@ namespace jw_robot
             CurrentField = currentField;
         }
 
-        public Position Move(char[] instructions)
+        public Position Move(Instruction[] instructions)
         {
             foreach (var movement in instructions)
             {
                 switch (movement)
                 {
-                    case 'F':
+                    case Instruction.F:
                         Forward();
                         break;
-                    case 'L':
+                    case Instruction.L:
                         Turn(movement);
                         break;
-                    case 'R':
+                    case Instruction.R:
                         Turn(movement);
                         break;
                     default:
                         Console.WriteLine("Unexpected value");
                         break;
                 }
-
-                // Console.WriteLine(MyPosition.Facing);
-                // Console.WriteLine(MyPosition.X + " " + MyPosition.Y);
             }
 
             return MyPosition;
         }
 
-        private void Turn(char turn)
+        private void Turn(Instruction turn)
         {
             MyPosition.Facing = turn switch
             {
-                'L' => MyPosition.Facing switch
+                Instruction.L => MyPosition.Facing switch
                 {
                     N => W,
                     W => S,
@@ -53,7 +50,7 @@ namespace jw_robot
                     E => N,
                     _ => MyPosition.Facing
                 },
-                'R' => MyPosition.Facing switch
+                Instruction.R => MyPosition.Facing switch
                 {
                     N => E,
                     W => N,
@@ -65,7 +62,7 @@ namespace jw_robot
             };
         }
 
-        void Forward()
+        private void Forward()
         {
             switch (MyPosition.Facing)
             {
