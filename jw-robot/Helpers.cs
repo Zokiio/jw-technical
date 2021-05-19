@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 
 namespace jw_robot
 {
@@ -13,6 +14,11 @@ namespace jw_robot
                 Console.Write(new string(' ', Console.WindowWidth)); 
             }
             Console.SetCursorPosition(0, currentLineCursor);
+        }
+
+        public static void ErrorMessage(string msg = "Invalid Input. Try Again...")
+        {
+            Console.WriteLine(msg, Color.Crimson);
         }
     }
 }
