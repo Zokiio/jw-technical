@@ -9,6 +9,10 @@ namespace jw_robot
         {
             instructions = default;
             var split = input.Trim().Replace(" ", "").ToUpper().ToCharArray();
+            if (split.Length < 1)
+            {
+                return false;
+            } 
             var temp = new Instructions[split.Length];
             for (var i = 0; i < split.Length; i++)
             {
