@@ -20,10 +20,16 @@ namespace jw_robot
             Console.WriteLine("Instructions: ",Color.Coral);// Row  10
         }
 
-        public void UpdateValues(int row, string value)
+        private void UpdateValues(int row, string value)
         {
             Console.SetCursorPosition(startCol + 19, row);
             Console.Write(value);
+        }
+
+        public void AddFinalReport(Position finalPosition)
+        {
+            Console.SetCursorPosition(startCol, startRow+11);
+            Console.WriteLine($"Final Position: X: {finalPosition.X}, Y: {finalPosition.Y}, Facing: {finalPosition.Facing}", Color.Goldenrod);// Row  10
         }
 
         public (int x, int y) InputFieldSize()
@@ -49,11 +55,11 @@ namespace jw_robot
         {
             string[] input;
             int[] parsed;
-            Position inputValues = new Position();
-            
+            var inputValues = new Position();
             
             Console.SetCursorPosition(startCol, startRow);
             Console.WriteFormatted("Enter Starting position and what direction the robot should face. \nUse {0} for direction {1} ",Color.YellowGreen, Color.SeaGreen,"N/E/S/W", "(Ex: 2 3 N): ");
+            
             // TODO: Check Correct input
             input = Console.ReadLine().Split();
             while (!Helpers.TryParseIntList($"{input[0]} {input[1]}", out parsed, 2))
@@ -81,6 +87,7 @@ namespace jw_robot
             Helpers.ClearCurrentConsoleLine();
             Console.WriteLine("Enter move instructions for the robot.",Color.SeaGreen);
             Console.WriteFormatted("Use {0} to turn Right, {1} to turn Left, {2} to walk Froward. {3}",Color.YellowGreen, Color.SeaGreen, new string[]{"R","L","F","(Ex: FRFFLFLLF):"} );
+            
             var input = Console.ReadLine();
             // TODO: Typecheck input
             UpdateValues(10, input);
