@@ -1,6 +1,6 @@
 ﻿namespace jw_robot
 {
-    public enum Direction
+    public enum Directions
     {
         N,
         E,

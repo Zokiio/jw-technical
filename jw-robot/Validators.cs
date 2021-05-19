@@ -5,11 +5,11 @@ namespace jw_robot
 {
     public static class Validator
     {
-        public static bool ValidateInstructions(string input, out Instruction[] instructions)
+        public static bool ValidateInstructions(string input, out Instructions[] instructions)
         {
             instructions = default;
             var split = input.Trim().Replace(" ", "").ToUpper().ToCharArray();
-            var temp = new Instruction[split.Length];
+            var temp = new Instructions[split.Length];
             for (var i = 0; i < split.Length; i++)
             {
                 if(!TryParse(split[i].ToString(), out temp[i]))

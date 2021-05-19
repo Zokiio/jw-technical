@@ -7,7 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb58cdad-00da-4a33-8a06-f50ad8f06503" name="Default Changelist" comment="Rafactor: make use of EnumDirections" />
+    <list default="true" id="eb58cdad-00da-4a33-8a06-f50ad8f06503" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.jw-robot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.jw-robot/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,17 +25,6 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/Users/jocke/RiderProjects/jw-robot/jw-robot/Position.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/jocke/RiderProjects/jw-robot/jw-robot/UserInterface.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/jocke/RiderProjects/jw-robot/jw-robot/Robot.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/jocke/RiderProjects/jw-robot/jw-robot/Helpers.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/jocke/RiderProjects/jw-robot/jw-robot/UserInterface.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/jocke/RiderProjects/jw-robot/jw-robot/Robot.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/jocke/RiderProjects/jw-robot/jw-robot/Robot.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/jocke/RiderProjects/jw-robot/jw-robot/UserInterface.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/jocke/RiderProjects/jw-robot/jw-robot/Helpers.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -92,7 +83,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1621397118577</updated>
-      <workItem from="1621397129065" duration="30818000" />
+      <workItem from="1621397129065" duration="31514000" />
+      <workItem from="1621431463279" duration="467000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1621397201806</created>
@@ -192,13 +184,20 @@
       <option name="project" value="LOCAL" />
       <updated>1621430684211</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Add project files">
+      <created>1621430778754</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1621430778754</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -210,6 +209,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
@@ -227,7 +227,8 @@
     <MESSAGE value="Add Enum Instructions.cs" />
     <MESSAGE value="Add Validation on input" />
     <MESSAGE value="Rafactor: make use of EnumDirections" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rafactor: make use of EnumDirections" />
+    <MESSAGE value="Add project files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add project files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

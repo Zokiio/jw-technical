@@ -1,6 +1,6 @@
 ﻿namespace jw_robot
 {
-    public enum Instruction
+    public enum Instructions
     {
         F,
         L,

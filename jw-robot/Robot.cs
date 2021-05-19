@@ -1,5 +1,5 @@
 ﻿using System;
-using static jw_robot.Direction;
+using static jw_robot.Directions;
 
 namespace jw_robot
 {
@@ -14,19 +14,19 @@ namespace jw_robot
             CurrentField = currentField;
         }
 
-        public Position Move(Instruction[] instructions)
+        public Position Move(Instructions[] instructions)
         {
             foreach (var movement in instructions)
             {
                 switch (movement)
                 {
-                    case Instruction.F:
+                    case Instructions.F:
                         Forward();
                         break;
-                    case Instruction.L:
+                    case Instructions.L:
                         Turn(movement);
                         break;
-                    case Instruction.R:
+                    case Instructions.R:
                         Turn(movement);
                         break;
                     default:
@@ -38,11 +38,11 @@ namespace jw_robot
             return MyPosition;
         }
 
-        private void Turn(Instruction turn)
+        private void Turn(Instructions turn)
         {
             MyPosition.Facing = turn switch
             {
-                Instruction.L => MyPosition.Facing switch
+                Instructions.L => MyPosition.Facing switch
                 {
                     N => W,
                     W => S,
@@ -50,7 +50,7 @@ namespace jw_robot
                     E => N,
                     _ => MyPosition.Facing
                 },
-                Instruction.R => MyPosition.Facing switch
+                Instructions.R => MyPosition.Facing switch
                 {
                     N => E,
                     W => N,

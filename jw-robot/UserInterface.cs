@@ -73,9 +73,9 @@ namespace jw_robot
             return inputValues;
         }
 
-        public Instruction[] InputInstructions()
+        public Instructions[] InputInstructions()
         {
-            Instruction[] instructions;
+            Instructions[] instructions;
             Console.SetCursorPosition(_startCol, _startRow);
             Helpers.ClearCurrentConsoleLine(5);
             Console.WriteLine("Enter move instructions for the robot.",Color.SeaGreen);

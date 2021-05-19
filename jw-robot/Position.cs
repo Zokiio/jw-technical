@@ -6,9 +6,9 @@ namespace jw_robot
     {
         public int X;
         public int Y;
-        public Direction Facing;
+        public Directions Facing;
         
-        public Position(int x= 0, int y=0, Direction facing = Direction.N)
+        public Position(int x= 0, int y=0, Directions facing = Directions.N)
         {
             X = x;
             Y = y;
