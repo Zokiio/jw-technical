@@ -30,21 +30,27 @@ namespace jw_robot
         
         public static bool ValidateInputStartPosition(string input, Position values, Field field)
         {
-            if (!Regex.IsMatch(input, @"^\d+\s?\d+\s?[NESW]$"))
+            if (!Regex.IsMatch(input, @"^\d+\s?\d+\s?[neswNESW]$"))
             {
                 return false;
             }
             
             var split = input.Trim().ToUpper().Split();
 
-            var parseX = int.TryParse(split[0], out values.X);
-            var parseY = int.TryParse(split[1], out values.Y);
-            var parseF = TryParse(split[2], out values.Facing);
-            if(values.X > field.Width || values.Y > field.Depth)
+            var parseX = int.TryParse(split[0], out var width);
+            var parseY = int.TryParse(split[1], out var depth);
+            var parseF = TryParse(split[2], out Directions facing);
+            if(width > field.Width || depth > field.Depth)
             {
                 return false;
             }
-            return parseX || parseY || parseF;
+
+            if (!parseX && !parseY && !parseF) return false;
+            values.X = width;
+            values.Y = depth;
+            values.Facing = facing;
+            return true;
+
         }
         
         public static bool ValidateFieldSize(string input, out int[] inputValues, int length = 0)

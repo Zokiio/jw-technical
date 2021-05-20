@@ -7,16 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb58cdad-00da-4a33-8a06-f50ad8f06503" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js-robot.Test/RobotTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js-robot.Test/js-robot.Test.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jw-robot.Tests/RobotTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jw-robot.Tests/ValidatorTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jw-robot.Tests/jw-robot.Tests.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jw-robot.sln.DotSettings.user" afterDir="false" />
+    <list default="true" id="eb58cdad-00da-4a33-8a06-f50ad8f06503" name="Default Changelist" comment="Correct a minor bug&#10;&#10;Refactor name Validator -&gt; Validators">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.jw-robot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.jw-robot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jw-robot.sln" beforeDir="false" afterPath="$PROJECT_DIR$/jw-robot.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jw-robot/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/jw-robot/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jw-robot/UserInterface.cs" beforeDir="false" afterPath="$PROJECT_DIR$/jw-robot/UserInterface.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jw-robot/Validators.cs" beforeDir="false" afterPath="$PROJECT_DIR$/jw-robot/Validators.cs" afterDir="false" />
     </list>
@@ -37,7 +29,6 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/js-robot.Test/RobotTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/jocke/RiderProjects/jw-robot/jw-robot/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/jocke/RiderProjects/jw-robot/jw-robot/UserInterface.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/jocke/RiderProjects/jw-robot/jw-robot/Validators.cs" root0="SKIP_HIGHLIGHTING" />
@@ -57,10 +48,10 @@
       <option value="$PROJECT_DIR$/jw-robot.Tests/UnitTest1.cs" />
       <option value="$PROJECT_DIR$/js-robot.Test/RobotTests.cs" />
       <option value="$PROJECT_DIR$/jw-robot.Tests/RobotTests.cs" />
-      <option value="$PROJECT_DIR$/jw-robot/UserInterface.cs" />
-      <option value="$PROJECT_DIR$/jw-robot/Validators.cs" />
       <option value="$PROJECT_DIR$/jw-robot.Tests/ValidatorTests.cs" />
       <option value="$PROJECT_DIR$/jw-robot.Tests/HelpersTests.cs" />
+      <option value="$PROJECT_DIR$/jw-robot/UserInterface.cs" />
+      <option value="$PROJECT_DIR$/jw-robot/Validators.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sjs1UF7UZ1A78nRLoy2zHuf9gL" />
@@ -109,7 +100,7 @@
       <workItem from="1621397129065" duration="31514000" />
       <workItem from="1621431463279" duration="4428000" />
       <workItem from="1621485446413" duration="8497000" />
-      <workItem from="1621497823071" duration="9491000" />
+      <workItem from="1621497823071" duration="11384000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1621397201806</created>
@@ -279,7 +270,21 @@
       <option name="project" value="LOCAL" />
       <updated>1621435916767</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Add Test Project">
+      <created>1621508407689</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1621508407689</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Correct a minor bug&#10;&#10;Refactor name Validator -&gt; Validators">
+      <created>1621508485718</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1621508485718</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,18 +299,18 @@
       <expand>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 57% 120/280" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 54% 128/280" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 57% 120/280" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="jw-robot 49% 120/237" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 54% 128/280" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="jw-robot 46% 128/237" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 57% 120/280" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="jw-robot 49% 120/237" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
-          <item name="jw_robot 49% 120/237" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 54% 128/280" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="jw-robot 46% 128/237" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="jw_robot 46% 128/237" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
       </expand>
       <select />
@@ -350,6 +355,40 @@
     <MESSAGE value="wrap program in loop" />
     <MESSAGE value="Implement field" />
     <MESSAGE value="Add using system.Enum" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add using system.Enum" />
+    <MESSAGE value="Add Test Project" />
+    <MESSAGE value="Correct a minor bug&#10;&#10;Refactor name Validator -&gt; Validators" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correct a minor bug&#10;&#10;Refactor name Validator -&gt; Validators" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/jw-robot/Validators.cs</url>
+          <line>32</line>
+          <properties documentPath="C:\Users\jocke\RiderProjects\jw-robot\jw-robot\Validators.cs" initialLine="32" containingFunctionPresentation="method 'ValidateInputStartPosition'">
+            <startOffsets>
+              <option value="939" />
+            </startOffsets>
+            <endOffsets>
+              <option value="994" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/jw-robot/Program.cs</url>
+          <line>20</line>
+          <properties documentPath="C:\Users\jocke\RiderProjects\jw-robot\jw-robot\Program.cs" initialLine="20" containingFunctionPresentation="method 'Main'">
+            <startOffsets>
+              <option value="688" />
+            </startOffsets>
+            <endOffsets>
+              <option value="689" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
