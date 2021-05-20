@@ -101,9 +101,9 @@ namespace jw_robot
         {
             Console.SetCursorPosition(_startCol, _startRow);
             Helpers.ClearCurrentConsoleLine(5);
-            Console.WriteLine("Do you want to Restart (Y/N)? ");
+            Console.WriteLine("Do you want to Restart (Y)? ");
             var input = Console.ReadKey();
-            return input.KeyChar != 'Y';
+            return input.KeyChar is 'Y' or 'y';
         }
     }
 }
