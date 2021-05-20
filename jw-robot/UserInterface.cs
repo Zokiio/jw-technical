@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Drawing;
-
+using System.Linq;
 using Console = Colorful.Console;
 
 namespace jw_robot
@@ -37,7 +37,7 @@ namespace jw_robot
             int[] inputValues;
             Console.SetCursorPosition(_startCol, _startRow);
             Console.WriteFormatted("Enter field size. {0}", Color.YellowGreen, Color.SeaGreen,"(Ex: 5 6): ");
-            while (!Validator.ValidateFieldSize(Console.ReadLine().Trim(), out inputValues, 2))
+            while (!Validators.ValidateFieldSize(Console.ReadLine().Trim(), out inputValues, 2))
             {
                 Console.SetCursorPosition(_startCol, _startRow);
                 Helpers.ClearCurrentConsoleLine();
@@ -62,7 +62,7 @@ namespace jw_robot
             Console.WriteLineFormatted("Enter Starting position and what direction the robot should face. \nUse {0} for direction {1} ",Color.YellowGreen, Color.SeaGreen,"N/E/S/W", "(Ex: 2 3 N): ");
             Console.Write("Start position, X / Y, can't be lower or larger than the field size: ",Color.SeaGreen);
 
-            while (!Validator.ValidateInputStartPosition(Console.ReadLine(), inputValues, fieldSize))
+            while (!Validators.ValidateInputStartPosition(Console.ReadLine(), inputValues, fieldSize))
             {
                 Console.SetCursorPosition(_startCol, _startRow);
                 Helpers.ClearCurrentConsoleLine(3);
@@ -83,7 +83,7 @@ namespace jw_robot
             Console.WriteLine("Enter move instructions for the robot.",Color.SeaGreen);
             Console.WriteFormatted("Use {0} to turn Right, {1} to turn Left, {2} to walk Froward. {3}",Color.YellowGreen, Color.SeaGreen, new string[]{"R","L","F","(Ex: FRFFLFLLF):"} );
 
-            while (!Validator.ValidateInstructions(Console.ReadLine(), out instructions))
+            while (!Validators.ValidateInstructions(Console.ReadLine(), out instructions))
             {
                 Console.SetCursorPosition(_startCol, _startRow);
                 Helpers.ClearCurrentConsoleLine(5);
@@ -92,6 +92,8 @@ namespace jw_robot
                 Console.WriteFormatted("Use {0} to turn Right, {1} to turn Left, {2} to walk Froward. {3}",Color.YellowGreen, Color.SeaGreen, new string[]{"R","L","F","(Ex: FRFFLFLLF):"} );
             }
 
+            var insToString = string.Join("", instructions.Select(v => v.ToString()));
+            UpdateValues(10,$"{insToString}");
             return instructions;
         }
 
@@ -101,12 +103,7 @@ namespace jw_robot
             Helpers.ClearCurrentConsoleLine(5);
             Console.WriteLine("Do you want to Restart (Y/N)? ");
             var input = Console.ReadKey();
-            if (input.KeyChar != 'Y')
-            {
-                return true;
-            }
-
-            return false;
+            return input.KeyChar != 'Y';
         }
     }
 }

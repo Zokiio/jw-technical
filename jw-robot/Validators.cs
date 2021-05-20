@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Linq;
+using System.Text.RegularExpressions;
 using static System.Enum;
 
 namespace jw_robot
 {
-    public static class Validator
+    public static class Validators
     {
         public static bool ValidateInstructions(string input, out Instructions[] instructions)
         {
@@ -28,12 +30,13 @@ namespace jw_robot
         
         public static bool ValidateInputStartPosition(string input, Position values, Field field)
         {
-            var split = input.Trim().ToUpper().Split();
-            if (split.Length != 3)
+            if (!Regex.IsMatch(input, @"^\d+\s?\d+\s?[NESW]$"))
             {
                 return false;
             }
             
+            var split = input.Trim().ToUpper().Split();
+
             var parseX = int.TryParse(split[0], out values.X);
             var parseY = int.TryParse(split[1], out values.Y);
             var parseF = TryParse(split[2], out values.Facing);
