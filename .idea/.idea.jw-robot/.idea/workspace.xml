@@ -7,13 +7,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb58cdad-00da-4a33-8a06-f50ad8f06503" name="Default Changelist" comment="Remove readkey">
-      <change afterPath="$PROJECT_DIR$/jw-robot/Field.cs" afterDir="false" />
+    <list default="true" id="eb58cdad-00da-4a33-8a06-f50ad8f06503" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/js-robot.Test/RobotTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js-robot.Test/js-robot.Test.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-robot.Tests/RobotTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-robot.Tests/ValidatorTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-robot.Tests/jw-robot.Tests.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jw-robot.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.jw-robot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.jw-robot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jw-robot/Helpers.cs" beforeDir="false" afterPath="$PROJECT_DIR$/jw-robot/Helpers.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jw-robot/Position.cs" beforeDir="false" afterPath="$PROJECT_DIR$/jw-robot/Position.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jw-robot.sln" beforeDir="false" afterPath="$PROJECT_DIR$/jw-robot.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jw-robot/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/jw-robot/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jw-robot/Robot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/jw-robot/Robot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jw-robot/UserInterface.cs" beforeDir="false" afterPath="$PROJECT_DIR$/jw-robot/UserInterface.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jw-robot/Validators.cs" beforeDir="false" afterPath="$PROJECT_DIR$/jw-robot/Validators.cs" afterDir="false" />
     </list>
@@ -34,8 +37,9 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/Users/jocke/RiderProjects/jw-robot/jw-robot/UserInterface.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/js-robot.Test/RobotTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/jocke/RiderProjects/jw-robot/jw-robot/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/jocke/RiderProjects/jw-robot/jw-robot/UserInterface.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/jocke/RiderProjects/jw-robot/jw-robot/Validators.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -48,9 +52,15 @@
       <option value="$PROJECT_DIR$/jw-robot/Position.cs" />
       <option value="$PROJECT_DIR$/jw-robot/Robot.cs" />
       <option value="$PROJECT_DIR$/jw-robot/Field.cs" />
-      <option value="$PROJECT_DIR$/jw-robot/Validators.cs" />
-      <option value="$PROJECT_DIR$/jw-robot/UserInterface.cs" />
+      <option value="$PROJECT_DIR$/js-robot.Test/Class1.cs" />
       <option value="$PROJECT_DIR$/jw-robot/Program.cs" />
+      <option value="$PROJECT_DIR$/jw-robot.Tests/UnitTest1.cs" />
+      <option value="$PROJECT_DIR$/js-robot.Test/RobotTests.cs" />
+      <option value="$PROJECT_DIR$/jw-robot.Tests/RobotTests.cs" />
+      <option value="$PROJECT_DIR$/jw-robot/UserInterface.cs" />
+      <option value="$PROJECT_DIR$/jw-robot/Validators.cs" />
+      <option value="$PROJECT_DIR$/jw-robot.Tests/ValidatorTests.cs" />
+      <option value="$PROJECT_DIR$/jw-robot.Tests/HelpersTests.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1sjs1UF7UZ1A78nRLoy2zHuf9gL" />
@@ -59,16 +69,16 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3502871" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.35048753" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="dotNetConsole" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected=".NET Project.jw-robot">
     <configuration name="jw-robot" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/jw-robot/bin/Debug/net5.0/jw-robot.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -97,7 +107,9 @@
       <option name="presentableId" value="Default" />
       <updated>1621397118577</updated>
       <workItem from="1621397129065" duration="31514000" />
-      <workItem from="1621431463279" duration="4070000" />
+      <workItem from="1621431463279" duration="4428000" />
+      <workItem from="1621485446413" duration="8497000" />
+      <workItem from="1621497823071" duration="9491000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1621397201806</created>
@@ -232,11 +244,72 @@
       <option name="project" value="LOCAL" />
       <updated>1621433606509</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Add Field.cs">
+      <created>1621435655432</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1621435655432</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Add error message">
+      <created>1621435675882</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1621435675882</updated>
+    </task>
+    <task id="LOCAL-00022" summary="wrap program in loop">
+      <created>1621435725525</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1621435725525</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Implement field">
+      <created>1621435745497</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1621435745497</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Add using system.Enum">
+      <created>1621435916767</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1621435916767</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnitTestsCoverage.Settings">
+    <option name="coveragePercentColumnWidth" value="126" />
+    <option name="sortOrder" value="DESCENDING" />
+    <option name="sortedColumn" value="1" />
+    <option name="symbolColumnWidth" value="168" />
+    <coverage-tree-state>
+      <expand>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 57% 120/280" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 57% 120/280" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="jw-robot 49% 120/237" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 57% 120/280" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="jw-robot 49% 120/237" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="jw_robot 49% 120/237" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+      </expand>
+      <select />
+    </coverage-tree-state>
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
@@ -271,8 +344,12 @@
     <MESSAGE value="Add project files" />
     <MESSAGE value="Change naming convention on Enum" />
     <MESSAGE value="ValidateInstructions handle no input" />
-    <MESSAGE value="Add error message" />
     <MESSAGE value="Remove readkey" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove readkey" />
+    <MESSAGE value="Add Field.cs" />
+    <MESSAGE value="Add error message" />
+    <MESSAGE value="wrap program in loop" />
+    <MESSAGE value="Implement field" />
+    <MESSAGE value="Add using system.Enum" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add using system.Enum" />
   </component>
 </project>

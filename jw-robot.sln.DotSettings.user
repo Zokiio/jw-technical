@@ -1,0 +1,9 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\jocke\AppData\Local\JetBrains\Rider2021.1\resharper-host\temp\Rider\vAny\CoverageData\_jw-robot.2146918801.01\Snapshot\snapshot.utdcvr</s:String>
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=64ff8177_002Db3a4_002D49e4_002D8c00_002D20a64f777135/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="RobotTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::11E2A257-D4EE-4952-9D17-04DD3BBC559F::net5.0::jw_robot.Tests.RobotTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::11E2A257-D4EE-4952-9D17-04DD3BBC559F::net5.0::jw_robot.Tests.ValidatorTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
